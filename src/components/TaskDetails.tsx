@@ -6,7 +6,7 @@ const TaskDetails = () => {
   return (
     <div>
       <h1>{task?.title}</h1>
-      <span>{task?.completed ? "true" : "false"}</span>
+      <span>{task?.completed ? "Completed" : "Not Completed"}</span>
     </div>
   );
 };

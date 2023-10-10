@@ -13,7 +13,7 @@ const AllUsers = () => {
             if (!user) return <Navigate replace to={"/"} />;
             else {
               setId(user.id);
-              navigate(`/${user.id}/UserDetails`);
+              navigate(`/users/${user.id}`);
             }
           }}
         >

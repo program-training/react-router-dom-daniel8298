@@ -7,7 +7,7 @@ const UserDetails = () => {
   const user = users.find((user) => Number(user.id) === id);
   return (
     <div>
-      <div onClick={() => navigate(`/${user.id}/UsersTasks`)} key={user.id}>
+      <div onClick={() => navigate(`/users/${user.id}/tasks`)} key={user.id}>
         tasks
       </div>
       <h1>{user?.email}</h1>
